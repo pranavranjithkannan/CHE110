@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loss of Biodiversity: A Threat to Our Environment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .parallax {
+            background-image: url('https://source.unsplash.com/random/1920x1080?nature');
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="parallax flex items-center justify-center">
+        <h1 class="text-5xl font-bold text-white animate__animated animate__fadeInDown">Loss of Biodiversity: A Threat to Our Environment</h1>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInLeft">Introduction</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Biodiversity is the variety of life on Earth, and it plays a crucial role in maintaining the balance of ecosystems and supporting human life. However, human activities such as deforestation, pollution, and overexploitation of natural resources are causing a rapid decline in biodiversity, with severe consequences for our environment.</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInLeft">Impacts on Ecosystems</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Loss of biodiversity disrupts food webs and ecological balance, leading to the loss of ecosystem services such as water purification and nutrient cycling. It also increases the vulnerability of ecosystems to invasive species and diseases.</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInLeft">Impacts on Climate Change</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Biodiversity plays a crucial role in carbon sequestration and climate regulation. The loss of forests and other carbon sinks exacerbates climate change, which in turn threatens biodiversity through habitat loss and species extinction.</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInLeft">Impacts on Resources</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Biodiversity loss leads to the depletion of natural resources, including genetic diversity for agriculture, medicine, and industry. It also threatens food security and human health.</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInLeft">Call to Action</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Preserving biodiversity is crucial for a healthy planet. We must take individual actions, such as sustainable consumption and eco-friendly choices, as well as support community and government efforts towards conservation and policy changes.</p>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded animate__animated animate__bounceIn">
+                <a href="get.html"> Get Involved</a>
+            </button>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInLeft">Additional Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://www.fairplanet.org/story/causes-effects-biodiversity-loss/" class="text-blue-500 hover:text-blue-800 animate__animated animate__fadeInRight">
+                        Reputable sources for further reading
+                    </a>
+                </li>
+                <li>
+                    <a href="add.html" class="text-blue-500 hover:text-blue-800 animate__animated animate__fadeInRight">
+                        Organizations working on biodiversity conservation
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mb-8">
+            
+                <a href="contact.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded animate__animated animate__bounceIn">
+                    Contact Us
+                </a>
+            
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@material-ui/core/umd/material-ui.production.min.js"></script>
+    <script>
+        const { TextField } = window['MaterialUI'].Core;
+        const rootElement = document.querySelector('#root');
+        ReactDOM.render(
+            React.createElement(
+                'div',
+                null,
+                React.createElement(TextField, { label: 'Name', variant: 'outlined', fullWidth: true }),
+                React.createElement(TextField, { label: 'Email', variant: 'outlined', fullWidth: true }),
+                React.createElement(TextField, { label: 'Message', variant: 'outlined', multiline: true, rows: 4, fullWidth: true })
+            ),
+            rootElement
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | Loss of Biodiversity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8 animate__animated animate__fadeInDown">Get Involved</h1>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 animate__animated animate__fadeInLeft">Volunteer</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Join our team of dedicated volunteers and contribute your time and skills to help preserve biodiversity. We offer various opportunities, from participating in conservation projects to raising awareness in local communities.</p>
+            <a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded animate__animated animate__bounceIn">Volunteer Now</a>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 animate__animated animate__fadeInLeft">Donate</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Your financial support is crucial in funding our conservation efforts, research projects, and educational initiatives. Every contribution, no matter how small, makes a significant impact.</p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded animate__animated animate__bounceIn">Donate Now</a>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 animate__animated animate__fadeInLeft">Spread Awareness</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Help us raise awareness about the importance of biodiversity and the threats it faces. Share our content on social media, organize events, or engage your local community in discussions and activities.</p>
+            <a href="#" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded animate__animated animate__bounceIn">Learn More</a>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 animate__animated animate__fadeInLeft">Contact Us</h2>
+            <p class="mb-4 animate__animated animate__fadeInRight">Have any questions or suggestions? Feel free to reach out to us, and we'll be happy to assist you.</p>
+            <form>
+                <div class="mb-4 animate__animated animate__fadeInRight">
+                    <TextField label="Name" variant="outlined" fullWidth />
+                </div>
+                <div class="mb-4 animate__animated animate__fadeInRight">
+                    <TextField label="Email" variant="outlined" fullWidth />
+                </div>
+                <div class="mb-4 animate__animated animate__fadeInRight">
+                    <TextField label="Message" variant="outlined" multiline rows={4} fullWidth />
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded animate__animated animate__bounceIn">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@material-ui/core/umd/material-ui.production.min.js"></script>
+    <script>
+        const { TextField } = window['MaterialUI'].Core;
+        const rootElement = document.querySelector('#root');
+        ReactDOM.render(
+            React.createElement(
+                'div',
+                null,
+                React.createElement(TextField, { label: 'Name', variant: 'outlined', fullWidth: true }),
+                React.createElement(TextField, { label: 'Email', variant: 'outlined', fullWidth: true }),
+                React.createElement(TextField, { label: 'Message', variant: 'outlined', multiline: true, rows: 4, fullWidth: true })
+            ),
+            rootElement
+        );
+    </script>
+</body>
+</html>
